@@ -19,7 +19,7 @@ namespace PallindromeChall
             normal = normal.RemoveSpecialCharacters();
             reversed = reversed.RemoveSpecialCharacters();
 
-            if (normal == reversed)
+            if (string.Compare(normal,reversed) == 0)
             {
                 output = true;
             }
