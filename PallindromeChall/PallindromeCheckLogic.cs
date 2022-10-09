@@ -13,12 +13,8 @@ namespace PallindromeChall
             bool output = false;
 
             string normal = input.ToString();
-            string reversed = "";
+            string reversed = new string(normal.Reverse().ToArray());
 
-            for (int i = normal.Length - 1; i > -1; i--)
-            {
-                reversed += normal[i];
-            }
 
             normal = normal.RemoveSpecialCharacters();
             reversed = reversed.RemoveSpecialCharacters();
